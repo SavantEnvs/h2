@@ -1,0 +1,6 @@
+project: savantenvs/h2
+target: fuzz_hpack
+
+cmds:
+  - cmd: /mayhem/fuzz_hpack
+    libfuzzer: true
