@@ -1,0 +1,9 @@
+project: savantenvs/h2
+target: fuzz_e2e-buggy-mhh-run-27
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_e2e-buggy-mhh-run-27/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_e2e
+    libfuzzer: true
