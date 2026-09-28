@@ -1,0 +1,7 @@
+project: savantenvs/h2
+target: fuzz-e2e-buggy-mhh-run-27
+# origin: https://app.mayhem.security/mayhemheroes/h2/fuzz-e2e/27
+
+cmds:
+  - cmd: /mayhem/fuzz_e2e
+    libfuzzer: true
